@@ -6,7 +6,6 @@ D:\Tailieu\code\.NET\PJ\FinalProject\bin\Debug\net6.0\FinalProject.deps.json
 D:\Tailieu\code\.NET\PJ\FinalProject\bin\Debug\net6.0\FinalProject.runtimeconfig.json
 D:\Tailieu\code\.NET\PJ\FinalProject\bin\Debug\net6.0\FinalProject.dll
 D:\Tailieu\code\.NET\PJ\FinalProject\bin\Debug\net6.0\FinalProject.pdb
-D:\Tailieu\code\.NET\PJ\FinalProject\obj\Debug\net6.0\FinalProject.csproj.AssemblyReference.cache
 D:\Tailieu\code\.NET\PJ\FinalProject\obj\Debug\net6.0\FinalProject.GeneratedMSBuildEditorConfig.editorconfig
 D:\Tailieu\code\.NET\PJ\FinalProject\obj\Debug\net6.0\FinalProject.AssemblyInfoInputs.cache
 D:\Tailieu\code\.NET\PJ\FinalProject\obj\Debug\net6.0\FinalProject.AssemblyInfo.cs

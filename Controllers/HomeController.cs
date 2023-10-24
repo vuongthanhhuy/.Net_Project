@@ -22,7 +22,14 @@ namespace FinalProject.Controllers
         {
             return View("rooms");
         }
-
+        public IActionResult services()
+        {
+            return View("services");
+        }
+        public IActionResult about()
+        {
+            return View("about");
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
