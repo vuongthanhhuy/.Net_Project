@@ -1,3 +1,6 @@
+using FinalProject.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace FinalProject
 {
     public class Program
@@ -8,7 +11,8 @@ namespace FinalProject
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
+            var connectionString = builder.Configuration.GetConnectionString("DbConnection");
+            builder.Services.AddDbContext<RoomsDBContext>(options => options.UseSqlServer(connectionString));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
