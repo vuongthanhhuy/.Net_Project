@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TDT\\Nam3\\hk1_nam3\\.Net\\BCCK\\.Net_Project\\FinalProject.csproj": {}
+    "D:\\TDT\\Nam3\\gith\\.Net_Project\\FinalProject.csproj": {}
   },
   "projects": {
-    "D:\\TDT\\Nam3\\hk1_nam3\\.Net\\BCCK\\.Net_Project\\FinalProject.csproj": {
+    "D:\\TDT\\Nam3\\gith\\.Net_Project\\FinalProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TDT\\Nam3\\hk1_nam3\\.Net\\BCCK\\.Net_Project\\FinalProject.csproj",
+        "projectUniqueName": "D:\\TDT\\Nam3\\gith\\.Net_Project\\FinalProject.csproj",
         "projectName": "FinalProject",
-        "projectPath": "D:\\TDT\\Nam3\\hk1_nam3\\.Net\\BCCK\\.Net_Project\\FinalProject.csproj",
+        "projectPath": "D:\\TDT\\Nam3\\gith\\.Net_Project\\FinalProject.csproj",
         "packagesPath": "C:\\Users\\THANH HUY\\.nuget\\packages\\",
-        "outputPath": "D:\\TDT\\Nam3\\hk1_nam3\\.Net\\BCCK\\.Net_Project\\obj\\",
+        "outputPath": "D:\\TDT\\Nam3\\gith\\.Net_Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\THANH HUY\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,6 +53,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.13, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

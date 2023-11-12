@@ -12,7 +12,7 @@ namespace FinalProject
             // Add services to the container.
             builder.Services.AddControllersWithViews();
             var connectionString = builder.Configuration.GetConnectionString("DbConnection");
-            builder.Services.AddDbContext<RoomsDBContext>(options => options.UseSqlServer(connectionString));
+            builder.Services.AddDbContext<SystemDBContext>(options => options.UseSqlServer(connectionString));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
