@@ -9,49 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FinalProject
 build_property.RootNamespace = FinalProject
-build_property.ProjectDir = D:\TDT\Nam3\gith\.Net_Project\
+build_property.ProjectDir = D:\Tailieu\code\.NET\PJ\.Net_Project\.Net_Project\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\TDT\Nam3\gith\.Net_Project
+build_property.MSBuildProjectDirectory = D:\Tailieu\code\.NET\PJ\.Net_Project\.Net_Project
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/TDT/Nam3/gith/.Net_Project/Views/Home/about.cshtml]
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Home/about.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TDT/Nam3/gith/.Net_Project/Views/Home/Index.cshtml]
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TDT/Nam3/gith/.Net_Project/Views/Home/Privacy.cshtml]
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TDT/Nam3/gith/.Net_Project/Views/Home/rooms.cshtml]
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Home/rooms.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyb29tcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TDT/Nam3/gith/.Net_Project/Views/Home/services.cshtml]
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Home/services.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzZXJ2aWNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TDT/Nam3/gith/.Net_Project/Views/Shared/Error.cshtml]
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Manage/Customers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXEN1c3RvbWVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Manage/CustomersByStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXEN1c3RvbWVyc0J5U3RhZmYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Manage/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXE9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Manage/OrderList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXE9yZGVyTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Manage/Reviews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXFJldmlld3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Manage/RoomsManage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlXFJvb21zTWFuYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TDT/Nam3/gith/.Net_Project/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Shared/_LayoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TDT/Nam3/gith/.Net_Project/Views/_ViewImports.cshtml]
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TDT/Nam3/gith/.Net_Project/Views/_ViewStart.cshtml]
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/TDT/Nam3/gith/.Net_Project/Views/Shared/_Layout.cshtml]
+[D:/Tailieu/code/.NET/PJ/.Net_Project/.Net_Project/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1iqdgs6srz

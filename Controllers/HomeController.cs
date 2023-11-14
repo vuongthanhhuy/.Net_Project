@@ -48,6 +48,7 @@ namespace FinalProject.Controllers
             };
             return View("rooms", room);
         }
+
         public IActionResult services()
         {
             return View("services");

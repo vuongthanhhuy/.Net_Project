@@ -29,10 +29,11 @@ namespace FinalProject
             app.UseRouting();
 
             app.UseAuthorization();
+          
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Manage}/{action=Index}/{id?}");
 
             app.Run();
         }
