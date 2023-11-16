@@ -19,6 +19,10 @@ namespace FinalProject.Data
                         .WithOne(e => e.RoomFacilities)
                         .HasForeignKey<RoomFacilities>(e => e.RoomId)
                         .IsRequired();
+            modelBuilder.Entity<RoomBookings>()
+                        .HasOne(b => b.Room)
+                        .WithMany(a => a.RoomBookings)
+                        .HasForeignKey(b => b.RoomId);
         }
         public DbSet<Rooms> Rooms { get; set; }
         public DbSet<RoomFacilities> RoomsFacilities { get; set; }
@@ -27,5 +31,7 @@ namespace FinalProject.Data
         public DbSet<Orderings> Orderings { get; set; }
         public DbSet<RoomReviews> RoomReviews { get; set; }
         public DbSet<History> History { get; set; }
+        public DbSet<HistoryStaffs> HistoryStaffs { get; set; }
+        public DbSet<RoomBookings> RoomBookings { get; set; }
     }
 }

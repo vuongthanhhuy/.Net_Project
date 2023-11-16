@@ -291,3 +291,4 @@ D:\Tailieu\code\.NET\PJ\.Net_Project\.Net_Project\obj\Debug\net6.0\refint\FinalP
 D:\Tailieu\code\.NET\PJ\.Net_Project\.Net_Project\obj\Debug\net6.0\FinalProject.pdb
 D:\Tailieu\code\.NET\PJ\.Net_Project\.Net_Project\obj\Debug\net6.0\FinalProject.genruntimeconfig.cache
 D:\Tailieu\code\.NET\PJ\.Net_Project\.Net_Project\obj\Debug\net6.0\ref\FinalProject.dll
+D:\TDT\Nam3\hk1_nam3\.Net\BCCK\.Net_Project\bin\Debug\net6.0\Newtonsoft.Json.dll

@@ -17,6 +17,8 @@
         public ICollection<History> Histories { get; set; }
 
         public ICollection<Accounts> Accounts { get; set; }
+        public ICollection<RoomBookings> RoomBookings { get; set; }
+        public ICollection<HistoryStaffs> HistoryStaffs { get; set; }
 
     }
 }

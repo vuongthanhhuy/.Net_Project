@@ -131,6 +131,51 @@ namespace FinalProject.Migrations
                     b.ToTable("History");
                 });
 
+            modelBuilder.Entity("FinalProject.Models.HistoryStaffs", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("AccountId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AccountsId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("BookingDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("CheckIn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("CheckOut")
+                        .HasColumnType("datetime2");
+
+                    b.Property<float>("Revenue")
+                        .HasColumnType("real");
+
+                    b.Property<string>("RoomId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoomsId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("customerName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AccountsId");
+
+                    b.HasIndex("RoomsId");
+
+                    b.ToTable("HistoryStaffs");
+                });
+
             modelBuilder.Entity("FinalProject.Models.Orderings", b =>
                 {
                     b.Property<string>("Id")
@@ -159,6 +204,10 @@ namespace FinalProject.Migrations
 
                     b.Property<float>("Revenue")
                         .HasColumnType("real");
+
+                    b.Property<string>("Room")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -196,6 +245,28 @@ namespace FinalProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("RestaurantMenus");
+                });
+
+            modelBuilder.Entity("FinalProject.Models.RoomBookings", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime>("CheckIn")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("CheckOut")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("RoomId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoomId");
+
+                    b.ToTable("RoomBookings");
                 });
 
             modelBuilder.Entity("FinalProject.Models.RoomFacilities", b =>
@@ -359,6 +430,23 @@ namespace FinalProject.Migrations
                     b.Navigation("Rooms");
                 });
 
+            modelBuilder.Entity("FinalProject.Models.HistoryStaffs", b =>
+                {
+                    b.HasOne("FinalProject.Models.Accounts", "Accounts")
+                        .WithMany("HistoryStaffs")
+                        .HasForeignKey("AccountsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FinalProject.Models.Rooms", "Rooms")
+                        .WithMany("HistoryStaffs")
+                        .HasForeignKey("RoomsId");
+
+                    b.Navigation("Accounts");
+
+                    b.Navigation("Rooms");
+                });
+
             modelBuilder.Entity("FinalProject.Models.Orderings", b =>
                 {
                     b.HasOne("FinalProject.Models.Accounts", "Accounts")
@@ -374,6 +462,17 @@ namespace FinalProject.Migrations
                     b.Navigation("Accounts");
 
                     b.Navigation("RestaurantMenus");
+                });
+
+            modelBuilder.Entity("FinalProject.Models.RoomBookings", b =>
+                {
+                    b.HasOne("FinalProject.Models.Rooms", "Room")
+                        .WithMany("RoomBookings")
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Room");
                 });
 
             modelBuilder.Entity("FinalProject.Models.RoomFacilities", b =>
@@ -408,6 +507,8 @@ namespace FinalProject.Migrations
                 {
                     b.Navigation("Histories");
 
+                    b.Navigation("HistoryStaffs");
+
                     b.Navigation("Orderings");
 
                     b.Navigation("RoomReviews");
@@ -421,6 +522,10 @@ namespace FinalProject.Migrations
             modelBuilder.Entity("FinalProject.Models.Rooms", b =>
                 {
                     b.Navigation("Histories");
+
+                    b.Navigation("HistoryStaffs");
+
+                    b.Navigation("RoomBookings");
 
                     b.Navigation("RoomFacilities")
                         .IsRequired();

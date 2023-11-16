@@ -12,6 +12,7 @@
         public string Token { get; set; }
         public ICollection<RoomReviews> RoomReviews { get; set; }
         public ICollection<History> Histories { get; set; }
+        public ICollection<HistoryStaffs> HistoryStaffs { get; set; }
         public ICollection<Rooms> Rooms { get; set; }
         public ICollection<RestaurantMenus> RestaurantMenus { get; set; }
         public ICollection<Orderings> Orderings { get; set; }
