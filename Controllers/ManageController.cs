@@ -1,4 +1,5 @@
 ﻿using FinalProject.Data;
+using FinalProject.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor.Compilation;
 
@@ -27,11 +28,32 @@ namespace FinalProject.Controllers
 
         public IActionResult Customers()
         {
-            return View("Customers");
+            var allHistory = _context.History.ToList();
+            var allRooms = _context.Rooms.ToList();
+            var allAccounts = _context.Accounts.ToList();
+
+            var customersView = new CustomerViews
+            {
+                AllHistory = allHistory,
+                AllRooms = allRooms,
+                AllAccounts = allAccounts
+            };
+            return View("Customers", customersView);
         }
 		public IActionResult CustomersByStaff()
         {
-            return View("CustomersByStaff");
+            var allHistoryStaffs = _context.HistoryStaffs.ToList();
+            var allRooms = _context.Rooms.ToList();
+            var allAccounts = _context.Accounts.ToList();
+
+			var customersView = new CustomerStaffViews
+			{
+				AllHistoryStaffs = allHistoryStaffs,
+				AllRooms = allRooms,
+				AllAccounts = allAccounts
+			};
+
+			return View("CustomersByStaff", customersView);
         }
         public IActionResult Order()
         {
