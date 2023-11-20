@@ -33,7 +33,7 @@ namespace FinalProject
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Manage}/{action=Index}/{id?}");
+                pattern: "{controller=Staff}/{action=Index}/{id?}");
 
             app.Run();
         }

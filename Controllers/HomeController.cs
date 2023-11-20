@@ -58,6 +58,16 @@ namespace FinalProject.Controllers
         {
             return View("about");
         }
+        public IActionResult blog()
+        {
+            return View("blog");
+        }
+        public IActionResult login()
+        {
+            return View("login", "_Login");
+        }
+        
+        
         [HttpPost]
         public IActionResult CheckAvailability(string checkin_date, string checkout_date, int adults, int children)
         {

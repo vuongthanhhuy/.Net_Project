@@ -1617,7 +1617,7 @@ a {
     padding-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
-    color: #f0f0f0;
+    color: #f0f0f0 !important;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
       color: #fff; }

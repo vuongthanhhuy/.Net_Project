@@ -2,59 +2,12 @@
 	Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 <div class=" d-block d-lg-flex align-items-center justify-content-between mb-5">
-	<div class="coin-tabs">
-		<ul class="nav nav-tabs d-none" id="ListViewTabLink" role="tablist">
-			<li class="nav-item" role="presentation">
-				<button class="nav-link active" id="all-status-tab" data-bs-toggle="tab"
-						data-bs-target="#all-status" type="button" role="tab" aria-controls="all-status"
-						aria-selected="true">
-					All Status
-				</button>
-			</li>
-			<li class="nav-item" role="presentation">
-				<button class="nav-link" id="available-tab" data-bs-toggle="tab"
-						data-bs-target="#available" type="button" role="tab" aria-controls="available"
-						aria-selected="false">
-					Available
-				</button>
-			</li>
-			<li class="nav-item" role="presentation">
-				<button class="nav-link" id="soldout-tab" data-bs-toggle="tab" data-bs-target="#soldout"
-						type="button" role="tab" aria-controls="soldout"
-						aria-selected="false">
-					Soldout
-				</button>
-			</li>
-		</ul>
-	</div>
 	<div class="form-head d-inline-block d-sm-flex align-items-center mt-2 mt-lg-0">
-		<ul class="grid-tabs nav nav-tabs border-0" id="nav-tab" role="tablist">
-			<li class="nav-item">
-				<button class="nav-link" id="list-tab" data-bs-toggle="tab" data-bs-target="#list"
-						type="button" role="tab" aria-controls="list" aria-selected="false">
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-						 xmlns="http://www.w3.org/2000/svg">
-						<path d="M21.7908 3.01252H8.23302C7.01521 3.01252 6.02441 4.00331 6.02441 5.22263C6.02441 6.44044 7.01521 7.43123 8.23302 7.43123H21.7908C23.0086 7.43123 23.9994 6.44044 23.9994 5.22263C23.9994 4.00327 23.0086 3.01252 21.7908 3.01252Z"
-							  fill="#C1C1C1" />
-						<path d="M2.20941 3.01252C0.991172 3.01252 0 4.00364 0 5.22188C0 6.44011 0.991172 7.43123 2.20941 7.43123C3.42764 7.43123 4.41877 6.44011 4.41877 5.22188C4.41877 4.00364 3.42764 3.01252 2.20941 3.01252Z"
-							  fill="#C1C1C1" />
-						<path d="M2.20941 9.79064C0.991172 9.79064 0 10.7818 0 12C0 13.2182 0.991172 14.2094 2.20941 14.2094C3.42764 14.2094 4.41877 13.2182 4.41877 12C4.41877 10.7818 3.42764 9.79064 2.20941 9.79064Z"
-							  fill="#C1C1C1" />
-						<path d="M2.20941 16.5688C0.991172 16.5688 0 17.5599 0 18.7781C0 19.9964 0.991172 20.9875 2.20941 20.9875C3.42764 20.9875 4.41877 19.9964 4.41877 18.7781C4.41877 17.5599 3.42764 16.5688 2.20941 16.5688Z"
-							  fill="#C1C1C1" />
-						<path d="M21.7908 9.79064H8.23302C7.01521 9.79064 6.02441 10.7814 6.02441 12.0007C6.02441 13.2186 7.01521 14.2094 8.23302 14.2094H21.7908C23.0086 14.2094 23.9994 13.2186 23.9994 12.0007C23.9994 10.7814 23.0086 9.79064 21.7908 9.79064Z"
-							  fill="#C1C1C1" />
-						<path d="M21.7908 16.5688H8.23302C7.01521 16.5688 6.02441 17.5596 6.02441 18.7789C6.02441 19.9967 7.01521 20.9875 8.23302 20.9875H21.7908C23.0086 20.9875 23.9994 19.9967 23.9994 18.7789C23.9994 17.5596 23.0086 16.5688 21.7908 16.5688Z"
-							  fill="#C1C1C1" />
-					</svg>
-				</button>
-			</li>
-		</ul>
-		<a href="javascript:void(0);" class="btn btn-primary ms-sm-3 ms-0 mt-2 mt-sm-0">Add New Room</a>
+		<a href="javascript:void(0);" class="btn btn-primary ms-sm-3 ms-0 mt-2 mt-sm-0 addNewRoom">Add New Room</a>
 	</div>
 </div>
 <div class="tab-content" id="nav-tabContent">
-	<div class="tab-pane fade" id="list" aria-labelledby="list-tab">
+	<div class="tab-pane fade active show" id="list" aria-labelledby="list-tab">
 		<div class="tab-content" id="ListViewTabLinkContent">
 			<div class="tab-pane fade active show" id="all-status"
 				 aria-labelledby="boxed-all-status-tab">
@@ -87,7 +40,7 @@
 									</td>
 									<td>
 										<div class="guest-bx">
-											<img class="me-4" src="images/event-card-img/pic-1.jpg"
+											<img class="me-4" src="/images/img_1.jpg"
 												 alt="">
 											<div>
 												<span class="text-primary fs-16 font-w400 text-nowrap">#R-001235</span>
@@ -144,9 +97,9 @@
 												</svg>
 											</a>
 											<div class="dropdown-menu">
-												<a class="dropdown-item"
+												<a class="dropdown-item edit"
 												   href="javascript:void(0);">Edit</a>
-												<a class="dropdown-item"
+												<a class="dropdown-item delete"
 												   href="javascript:void(0);">Delete</a>
 											</div>
 										</div>
@@ -160,7 +113,7 @@
 									</td>
 									<td>
 										<div class="guest-bx">
-											<img class="me-4" src="images/event-card-img/pic-2.jpg"
+											<img class="me-4" src="/images/img_1.jpg"
 												 alt="">
 											<div>
 												<span class="text-primary fs-16 font-w400 text-nowrap">#R-001235</span>
@@ -195,7 +148,7 @@
 									</td>
 									<td>
 										<div class="dropdown dropstart">
-											<a href="javascript:void(0);" class="btn-link"
+											<a href="javascript:void(0);" class="btn-link show"
 											   data-bs-toggle="dropdown" aria-expanded="false">
 												<svg width="24" height="24" viewBox="0 0 24 24"
 													 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -214,285 +167,9 @@
 												</svg>
 											</a>
 											<div class="dropdown-menu">
-												<a class="dropdown-item"
+												<a class="dropdown-item edit" 
 												   href="javascript:void(0);">Edit</a>
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="form-check style-3">
-											<input class="form-check-input" type="checkbox" value="">
-										</div>
-									</td>
-									<td>
-										<div class="guest-bx">
-											<img class="me-4" src="images/event-card-img/pic-3.jpg"
-												 alt="">
-											<div>
-												<span class="text-primary fs-16 font-w400 text-nowrap">#R-001235</span>
-												<h4 class="mb-0 mt-1 fs-18 font-w500 text-nowrap">
-													<a class="text-black"
-													   href="javascript:void(0);">Godfrey Common</a>
-												</h4>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Double Bed</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Floor G-05</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="btn btn-success btn-sm">AVAILABLE</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<h5 class="fs-15 font-w500 text-nowrap">Oct 29th, 2020</h5>
-											<span class="fs-14 font-w500 text-nowrap">08:29 AM</span>
-										</div>
-									</td>
-									<td>
-										<div class="dropdown dropstart">
-											<a href="javascript:void(0);" class="btn-link"
-											   data-bs-toggle="dropdown" aria-expanded="false">
-												<svg width="24" height="24" viewBox="0 0 24 24"
-													 fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-												</svg>
-											</a>
-											<div class="dropdown-menu">
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Edit</a>
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="form-check style-3">
-											<input class="form-check-input" type="checkbox" value="">
-										</div>
-									</td>
-									<td>
-										<div class="guest-bx">
-											<img class="me-4" src="images/event-card-img/pic-3.jpg"
-												 alt="">
-											<div>
-												<span class="text-primary fs-16 font-w400 text-nowrap">#R-001235</span>
-												<h4 class="mb-0 mt-1 fs-18 font-w500 text-nowrap">
-													<a class="text-black"
-													   href="javascript:void(0);">Homenick Cove</a>
-												</h4>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Double Bed</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Floor D-02</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="btn btn-primary btn-sm">BOOKED</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<h5 class="fs-15 font-w500 text-nowrap">Oct 29th, 2020</h5>
-											<span class="fs-14 font-w500 text-nowrap">08:29 AM</span>
-										</div>
-									</td>
-									<td>
-										<div class="dropdown dropstart">
-											<a href="javascript:void(0);" class="btn-link"
-											   data-bs-toggle="dropdown" aria-expanded="false">
-												<svg width="24" height="24" viewBox="0 0 24 24"
-													 fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-												</svg>
-											</a>
-											<div class="dropdown-menu">
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Edit</a>
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="form-check style-3">
-											<input class="form-check-input" type="checkbox" value="">
-										</div>
-									</td>
-									<td>
-										<div class="guest-bx">
-											<img class="me-4" src="images/event-card-img/pic-4.jpg"
-												 alt="">
-											<div>
-												<span class="text-primary fs-16 font-w400 text-nowrap">#R-001235</span>
-												<h4 class="mb-0 mt-1 fs-18 font-w500 text-nowrap">
-													<a class="text-black"
-													   href="javascript:void(0);">Ari Extension</a>
-												</h4>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Family Bed</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Floor N-24</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="btn btn-primary btn-sm">BOOKED</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<h5 class="fs-15 font-w500 text-nowrap">Oct 29th, 2020</h5>
-											<span class="fs-14 font-w500 text-nowrap">08:29 AM</span>
-										</div>
-									</td>
-									<td>
-										<div class="dropdown dropstart">
-											<a href="javascript:void(0);" class="btn-link"
-											   data-bs-toggle="dropdown" aria-expanded="false">
-												<svg width="24" height="24" viewBox="0 0 24 24"
-													 fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-												</svg>
-											</a>
-											<div class="dropdown-menu">
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Edit</a>
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="form-check style-3">
-											<input class="form-check-input" type="checkbox" value="">
-										</div>
-									</td>
-									<td>
-										<div class="guest-bx">
-											<img class="me-4" src="images/event-card-img/pic-1.jpg"
-												 alt="">
-											<div>
-												<span class="text-primary fs-16 font-w400 text-nowrap">#R-001235</span>
-												<h4 class="mb-0 mt-1 fs-18 font-w500 text-nowrap">
-													<a class="text-black"
-													   href="javascript:void(0);">Weimann Junctions</a>
-												</h4>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Double Bed</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Floor D-02</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="btn btn-primary btn-sm">BOOKED</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<h5 class="fs-15 font-w500 text-nowrap">Oct 29th, 2020</h5>
-											<span class="fs-14 font-w500 text-nowrap">08:29 AM</span>
-										</div>
-									</td>
-									<td>
-										<div class="dropdown dropstart">
-											<a href="javascript:void(0);" class="btn-link"
-											   data-bs-toggle="dropdown" aria-expanded="false">
-												<svg width="24" height="24" viewBox="0 0 24 24"
-													 fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-												</svg>
-											</a>
-											<div class="dropdown-menu">
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Edit</a>
-												<a class="dropdown-item"
+												<a class="dropdown-item delete"
 												   href="javascript:void(0);">Delete</a>
 											</div>
 										</div>
@@ -500,690 +177,253 @@
 								</tr>
 							</tbody>
 						</table>
-					</div>
-				</div>
-			</div>
-			<div class="tab-pane fade" id="available" aria-labelledby="available-tab">
-				<div class="table-responsive card">
-					<div class="table-responsive">
-						<table class="table border-0 display mb-4 dataTablesCard booking-table table-responsive-lg "
-							   id="guestTable-all4">
-							<thead>
-								<tr>
-									<th class="bg-none">
-										<div class="form-check style-3">
-											<input class="form-check-input" type="checkbox" value=""
-												   id="checkAll-1">
-										</div>
-									</th>
-									<th>Room Name</th>
-									<th>Bed Type</th>
-									<th>Room Floor</th>
-									<th>Status</th>
-									<th>Book Date</th>
-									<th class="bg-none"></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class="form-check  style-3">
-											<input class="form-check-input" type="checkbox" value="">
-										</div>
-									</td>
-									<td>
-										<div class="guest-bx">
-											<img class="me-4" src="images/event-card-img/pic-1.jpg"
-												 alt="">
-											<div>
-												<span class="text-primary fs-16 font-w400 text-nowrap">#R-001235</span>
-												<h4 class="mb-0 mt-1 fs-18 font-w500 text-nowrap">
-													<a class="text-black"
-													   href="javascript:void(0);">
-														404 Brrom Str,
-														Fl2
-													</a>
-												</h4>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Double Bed</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Floor G-05</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="btn btn-success btn-sm">AVAILABLE</span>
-
-										</div>
-									</td>
-									<td>
-										<div>
-											<h5 class="fs-15 font-w500 text-nowrap">Oct 29th, 2020</h5>
-											<span class="fs-14 font-w500 text-nowrap">08:29 AM</span>
-										</div>
-									</td>
-									<td>
-										<div class="dropdown dropstart">
-											<a href="javascript:void(0);" class="btn-link"
-											   data-bs-toggle="dropdown" aria-expanded="false">
-												<svg width="24" height="24" viewBox="0 0 24 24"
-													 fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-												</svg>
-											</a>
-											<div class="dropdown-menu">
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Edit</a>
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="form-check  style-3">
-											<input class="form-check-input" type="checkbox" value="">
-										</div>
-									</td>
-									<td>
-										<div class="guest-bx">
-											<img class="me-4" src="images/event-card-img/pic-2.jpg"
-												 alt="">
-											<div>
-												<span class="text-primary fs-16 font-w400 text-nowrap">#R-001235</span>
-												<h4 class="mb-0 mt-1 fs-18 font-w500 text-nowrap">
-													<a class="text-black"
-													   href="javascript:void(0);">Neoma Path</a>
-												</h4>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Single Bed</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Floor G-06</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="btn btn-primary btn-sm">BOOKED</span>
-
-										</div>
-									</td>
-									<td>
-										<div>
-											<h5 class="fs-15 font-w500 text-nowrap">Oct 29th, 2020</h5>
-											<span class="fs-14 font-w500 text-nowrap">08:29 AM</span>
-										</div>
-									</td>
-									<td>
-										<div class="dropdown dropstart">
-											<a href="javascript:void(0);" class="btn-link"
-											   data-bs-toggle="dropdown" aria-expanded="false">
-												<svg width="24" height="24" viewBox="0 0 24 24"
-													 fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-												</svg>
-											</a>
-											<div class="dropdown-menu">
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Edit</a>
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-
-								<tr>
-									<td>
-										<div class="form-check style-3">
-											<input class="form-check-input" type="checkbox" value="">
-										</div>
-									</td>
-									<td>
-										<div class="guest-bx">
-											<img class="me-4" src="images/event-card-img/pic-3.jpg"
-												 alt="">
-											<div>
-												<span class="text-primary fs-16 font-w400 text-nowrap">#R-001235</span>
-												<h4 class="mb-0 mt-1  fs-18 font-w500 text-nowrap">
-													<a class="text-black"
-													   href="javascript:void(0);">Godfrey Common</a>
-												</h4>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Double Bed</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Floor G-05</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="btn btn-success btn-sm">AVAILABLE</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<h5 class="fs-15 font-w500 text-nowrap">Oct 29th, 2020</h5>
-											<span class="fs-14 font-w500 text-nowrap">08:29 AM</span>
-										</div>
-									</td>
-									<td>
-										<div class="dropdown dropstart">
-											<a href="javascript:void(0);" class="btn-link"
-											   data-bs-toggle="dropdown" aria-expanded="false">
-												<svg width="24" height="24" viewBox="0 0 24 24"
-													 fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-												</svg>
-											</a>
-											<div class="dropdown-menu">
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Edit</a>
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-			<div class="tab-pane fade" id="soldout" aria-labelledby="soldout-tab">
-				<div class="table-responsive card">
-					<div class="table-responsive">
-						<table class="table border-0 display mb-4 dataTablesCard booking-table table-responsive-lg "
-							   id="guestTable-all5">
-							<thead>
-								<tr>
-									<th class="bg-none">
-										<div class="form-check style-3">
-											<input class="form-check-input" type="checkbox" value=""
-												   id="checkAll-2">
-										</div>
-									</th>
-									<th>Room Name</th>
-									<th>Bed Type</th>
-									<th>Room Floor</th>
-									<th>Status</th>
-									<th>Book Date</th>
-									<th class="bg-none"></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<div class="form-check  style-3">
-											<input class="form-check-input" type="checkbox" value="">
-										</div>
-									</td>
-									<td>
-										<div class="guest-bx">
-											<img class="me-4" src="images/event-card-img/pic-1.jpg"
-												 alt="">
-											<div>
-												<span class="text-primary fs-16 font-w400 text-nowrap">#R-001235</span>
-												<h4 class="mb-0 mt-1 fs-18 font-w500 text-nowrap">
-													<a class="text-black"
-													   href="javascript:void(0);">
-														404 Brrom Str,
-														Fl2
-													</a>
-												</h4>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Double Bed</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Floor G-05</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="btn btn-success btn-sm">AVAILABLE</span>
-
-										</div>
-									</td>
-									<td>
-										<div>
-											<h5 class="fs-15 font-w500 text-nowrap">Oct 29th, 2020</h5>
-											<span class="fs-14 font-w500 text-nowrap">08:29 AM</span>
-										</div>
-									</td>
-									<td>
-										<div class="dropdown dropstart">
-											<a href="javascript:void(0);" class="btn-link"
-											   data-bs-toggle="dropdown" aria-expanded="false">
-												<svg width="24" height="24" viewBox="0 0 24 24"
-													 fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-												</svg>
-											</a>
-											<div class="dropdown-menu">
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Edit</a>
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="form-check  style-3">
-											<input class="form-check-input" type="checkbox" value="">
-										</div>
-									</td>
-									<td>
-										<div class="guest-bx">
-											<img class="me-4" src="images/event-card-img/pic-2.jpg"
-												 alt="">
-											<div>
-												<span class="text-primary fs-16 font-w400 text-nowrap">#R-001235</span>
-												<h4 class="mb-0 mt-1 fs-18 font-w500 text-nowrap">
-													<a class="text-black"
-													   href="javascript:void(0);">Neoma Path</a>
-												</h4>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Single Bed</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Floor G-06</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="btn btn-primary btn-sm">BOOKED</span>
-
-										</div>
-									</td>
-									<td>
-										<div>
-											<h5 class="fs-15 font-w500 text-nowrap">Oct 29th, 2020</h5>
-											<span class="fs-14 font-w500 text-nowrap">08:29 AM</span>
-										</div>
-									</td>
-									<td>
-										<div class="dropdown dropstart">
-											<a href="javascript:void(0);" class="btn-link"
-											   data-bs-toggle="dropdown" aria-expanded="false">
-												<svg width="24" height="24" viewBox="0 0 24 24"
-													 fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-												</svg>
-											</a>
-											<div class="dropdown-menu">
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Edit</a>
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-
-								<tr>
-									<td>
-										<div class="form-check style-3">
-											<input class="form-check-input" type="checkbox" value="">
-										</div>
-									</td>
-									<td>
-										<div class="guest-bx">
-											<img class="me-4" src="images/event-card-img/pic-3.jpg"
-												 alt="">
-											<div>
-												<span class="text-primary fs-16 font-w400 text-nowrap">#R-001235</span>
-												<h4 class="mb-0 mt-1 fs-18 font-w500 text-nowrap">
-													<a class="text-black"
-													   href="javascript:void(0);">Godfrey Common</a>
-												</h4>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Double Bed</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="fs-15 font-w500 text-nowrap">Floor G-05</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<span class="btn btn-success btn-sm">AVAILABLE</span>
-										</div>
-									</td>
-									<td>
-										<div>
-											<h5 class="fs-15 font-w500 text-nowrap">Oct 29th, 2020</h5>
-											<span class="fs-14 font-w500 text-nowrap">08:29 AM</span>
-										</div>
-									</td>
-									<td>
-										<div class="dropdown dropstart">
-											<a href="javascript:void(0);" class="btn-link"
-											   data-bs-toggle="dropdown" aria-expanded="false">
-												<svg width="24" height="24" viewBox="0 0 24 24"
-													 fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-													<path d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-														  stroke="#262626" stroke-width="2"
-														  stroke-linecap="round"
-														  stroke-linejoin="round" />
-												</svg>
-											</a>
-											<div class="dropdown-menu">
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Edit</a>
-												<a class="dropdown-item"
-												   href="javascript:void(0);">Delete</a>
-											</div>
-										</div>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="tab-pane fade show active" id="boxed" aria-labelledby="boxed-tab">
-		<div class="tab-content" id="BoxedViewTabLinkContent">
-
-		@* AllRoom *@
-			<div class="tab-pane fade active show" id="boxed-all-status"
-				 aria-labelledby="boxed-all-status-tab">
-				<div class="row">
-					<div class="main-grid">
-						<div class="grid-info">
-							<div class="popular-rooms">
-								<div class="dropdown dropstart">
-									<a href="javascript:void(0);" class="btn-link"
-									   data-bs-toggle="dropdown" aria-expanded="false">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-											 xmlns="http://www.w3.org/2000/svg">
-											<path d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-												  stroke="white" stroke-width="2" stroke-linecap="round"
-												  stroke-linejoin="round" />
-											<path d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-												  stroke="white" stroke-width="2" stroke-linecap="round"
-												  stroke-linejoin="round" />
-											<path d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-												  stroke="white" stroke-width="2" stroke-linecap="round"
-												  stroke-linejoin="round" />
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="javascript:void(0);">Edit</a>
-										<a class="dropdown-item" href="javascript:void(0);">Delete</a>
-									</div>
-								</div>
-								<img src="~/images/roomgrid-img/pic-1.jpg" alt="image">
-								<div class="content">
-									<span class="badge badge-success">AVAILABLE</span>
-									<h3 class="font-w500 text-white pt-3 pb-2 m-0 text-nowrap">
-										<a href="javascript:void(0);">404 Brrom Str, Fl2</a>
-									</h3>
-									<span class="font-w400 text-white">Type 234</span>
-								</div>
-							</div>
-							<div class="review-area">
-								<div class="star-rate">
-									<h4 class="mb-0 font-w500">3.4</h4>
-									<ul>
-										<li><i class="fa-solid fa-star"></i></li>
-										<li><i class="fa-solid fa-star"></i></li>
-										<li><i class="fa-solid fa-star"></i></li>
-									</ul>
-								</div>
-								<p class="mb-0 font-w400">245 Reviews</p>
-							</div>
-							<ul class="feature-list">
-								<li>Floor <span>G-05</span></li>
-								<li>Bed Type <span>Double Bed</span></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="d-flex align-items-center justify-content-between flex-wrap mt-4">
-					<div class="mb-sm-0 mb-3">
-						<h5 class="mb-0">Showing 5 of 102 Data</h5>
-					</div>
-					<nav>
-						<ul class="pagination pagination-gutter pagination-primary style-1">
-							<li class="page-item page-indicator job-search-page">
-								<a class="page-link" href="javascript:void(0)">Prev</a>
-							</li>
-							<li class="page-item active">
-								<a class="page-link"
-								   href="javascript:void(0)">1</a>
-							</li>
-							<li class="page-item">
-								<a class="page-link" href="javascript:void(0)">2</a>
-							</li>
-							<li class="page-item">
-								<a class="page-link" href="javascript:void(0)">3</a>
-							</li>
-							<li class="page-item">
-								<a class="page-link" href="javascript:void(0)">4</a>
-							</li>
-							<li class="page-item page-indicator job-search-page">
-								<a class="page-link" href="javascript:void(0)">Next</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-
-		@* RoomAvailable *@
-			<div class="tab-pane fade" id="boxed-available" aria-labelledby="boxed-available-tab">
-				<div class="row">
-					<div class="main-grid">
-						<div class="grid-info">
-							<div class="popular-rooms">
-								<div class="dropdown dropstart">
-									<a href="javascript:void(0);" class="btn-link"
-									   data-bs-toggle="dropdown" aria-expanded="false">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-											 xmlns="http://www.w3.org/2000/svg">
-											<path d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-												  stroke="white" stroke-width="2" stroke-linecap="round"
-												  stroke-linejoin="round" />
-											<path d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-												  stroke="white" stroke-width="2" stroke-linecap="round"
-												  stroke-linejoin="round" />
-											<path d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-												  stroke="white" stroke-width="2" stroke-linecap="round"
-												  stroke-linejoin="round" />
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="javascript:void(0);">Edit</a>
-										<a class="dropdown-item" href="javascript:void(0);">Delete</a>
-									</div>
-								</div>
-								<img src="~/images/roomgrid-img/pic-15.jpg" alt="image">
-								<div class="content">
-									<span class="badge badge-success">AVAILABLE</span>
-									<h3 class="font-w500 text-white pt-3 pb-2 m-0">
-										<a href="javascript:void(0);">404 Brrom Str, Fl2</a>
-									</h3>
-									<span class="font-w400 text-white">Type 234</span>
-								</div>
-							</div>
-							<div class="review-area">
-								<div class="star-rate">
-									<h4 class="mb-0 font-w500">3.4</h4>
-									<ul>
-										<li><i class="fa-solid fa-star"></i></li>
-										<li><i class="fa-solid fa-star"></i></li>
-										<li><i class="fa-solid fa-star"></i></li>
-									</ul>
-								</div>
-								<p class="mb-0 font-w400">245 Reviews</p>
-							</div>
-							<ul class="feature-list">
-								<li>Floor <span>G-05</span></li>
-								<li>Bed Type <span>Double Bed</span></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			@* RoomSoldOut *@
-			<div class="tab-pane fade" id="boxed-soldout" aria-labelledby="boxed-soldout-tab">
-				<div class="row">
-					<div class="main-grid">
-						<div class="grid-info">
-							<div class="popular-rooms">
-								<div class="dropdown dropstart">
-									<a href="javascript:void(0);" class="btn-link"
-									   data-bs-toggle="dropdown" aria-expanded="false">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-											 xmlns="http://www.w3.org/2000/svg">
-											<path d="M11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12Z"
-												  stroke="white" stroke-width="2" stroke-linecap="round"
-												  stroke-linejoin="round" />
-											<path d="M18 12C18 12.5523 18.4477 13 19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12Z"
-												  stroke="white" stroke-width="2" stroke-linecap="round"
-												  stroke-linejoin="round" />
-											<path d="M4 12C4 12.5523 4.44772 13 5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12Z"
-												  stroke="white" stroke-width="2" stroke-linecap="round"
-												  stroke-linejoin="round" />
-										</svg>
-									</a>
-									<div class="dropdown-menu">
-										<a class="dropdown-item" href="javascript:void(0);">Edit</a>
-										<a class="dropdown-item" href="javascript:void(0);">Delete</a>
-									</div>
-								</div>
-								<img src="~/images/roomgrid-img/pic-5.jpg" alt="image">
-								<div class="content">
-									<span class="badge badge-primary">BOOKED</span>
-									<h3 class="font-w500 text-white pt-3 pb-2 m-0">
-										<a href="javascript:void(0);">404 Brrom Str, Fl2</a>
-									</h3>
-									<span class="font-w400 text-white">Type 234</span>
-								</div>
-							</div>
-							<div class="review-area">
-								<div class="star-rate">
-									<h4 class="mb-0 font-w500">3.4</h4>
-									<ul>
-										<li><i class="fa-solid fa-star"></i></li>
-										<li><i class="fa-solid fa-star"></i></li>
-										<li><i class="fa-solid fa-star"></i></li>
-									</ul>
-								</div>
-								<p class="mb-0 font-w400">245 Reviews</p>
-							</div>
-							<ul class="feature-list">
-								<li>Floor <span>G-05</span></li>
-								<li>Bed Type <span>Double Bed</span></li>
-							</ul>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+<!-- AddModal -->
+<div class="modal" id="addModal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Add new room</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="mb-3 row">
+					<label for="inputGroupFile01" class="col-sm-2 col-form-label">Image: </label>
+					<div class="col-sm-10">
+						<input type="file" class="form-control" id="inputGroupFile01">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputName" class="col-sm-2 col-form-label">Name: </label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputName">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputPrice" class="col-sm-2 col-form-label">Price: </label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" id="inputPrice">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputAdults" class="col-sm-2 col-form-label">Adults: </label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" id="inputAdults">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputChildren" class="col-sm-2 col-form-label">Children: </label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" id="inputChildren">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputCategories" class="col-sm-2 col-form-label">Categories: </label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputCategories">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputSize" class="col-sm-2 col-form-label">Size: </label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" id="inputSize">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputBedtype" class="col-sm-2 col-form-label">Bed type: </label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputBedtype">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputStatus" class="col-sm-2 col-form-label">Status: </label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" id="inputStatus">
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary " onclick="saveChanges()">Add room</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- EditModal -->
+<div class="modal" id="editModal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Edit room</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="mb-3 row">
+					<label for="inputGroupFile01" class="col-sm-2 col-form-label">Image: </label>
+					<div class="col-sm-10">
+						<input type="file" class="form-control" id="inputGroupFile01">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputName" class="col-sm-2 col-form-label">Name: </label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputName">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputPrice" class="col-sm-2 col-form-label">Price: </label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" id="inputPrice">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputAdults" class="col-sm-2 col-form-label">Adults: </label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" id="inputAdults">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputChildren" class="col-sm-2 col-form-label">Children: </label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" id="inputChildren">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputCategories" class="col-sm-2 col-form-label">Categories: </label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputCategories">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputSize" class="col-sm-2 col-form-label">Size: </label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" id="inputSize">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputBedtype" class="col-sm-2 col-form-label">Bed type: </label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="inputBedtype">
+					</div>
+				</div>
+				<div class="mb-3 row">
+					<label for="inputStatus" class="col-sm-2 col-form-label">Status: </label>
+					<div class="col-sm-10">
+						<input type="number" class="form-control" id="inputStatus">
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary " onclick="saveChanges()">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<script>
+	$(document).ready(function () {
+		// Xử lý sự kiện click cho class "edit"
+		$('.edit').on('click', function () {
+			// Hiển thị modal ở đây
+			// Ví dụ sử dụng Bootstrap Modal
+			$('#editModal').modal('show');
+		});
+		// Xử lý sự kiện click cho class "edit"
+		$('.add').on('click', function () {
+			// Hiển thị modal ở đây
+			// Ví dụ sử dụng Bootstrap Modal
+			$('#addModal').modal('show');
+		});
+	});
+</script>
+
+
+<script src="~/vendor/global/global.min.js"></script>
+
+<script>
+	$(function () {
+		$("#datepicker").datepicker({
+			autoclose: true,
+			todayHighlight: true
+		}).datepicker('update', new Date());
+	});
+</script>
+<script>
+	function assignedDoctor() {
+		/*  testimonial one function by = owl.carousel.js */
+		jQuery('.front-view-slider').owlCarousel({
+			loop: true,
+			margin: 30,
+			nav: true,
+			center: true,
+			autoplaySpeed: 3000,
+			navSpeed: 3000,
+			paginationSpeed: 3000,
+			slideSpeed: 3000,
+			smartSpeed: 3000,
+			autoplay: false,
+			animateOut: 'fadeOut',
+			dots: true,
+			navText: ['', ''],
+			responsive: {
+				0: {
+					items: 1
+				},
+				480: {
+					items: 1
+				},
+				767: {
+					items: 5
+				},
+				1400: {
+					items: 5
+				},
+				1750: {
+					items: 5
+				}
+			}
+		})
+	}
+	jQuery(window).on('load', function () {
+		setTimeout(function () {
+			assignedDoctor();
+		}, 1000);
+	});
+</script>
+<script>
+	// Hàm hiển thị modal
+	function showEditModal() {
+		$('#editModal').modal('show');
+	}
+	function showAddModal() {
+		$('#addModal').modal('show');
+	}
+
+	// Hàm xử lý lưu chỉnh sửa (gọi khi người dùng nhấn "Save Changes")
+	function saveChanges() {
+		// Thực hiện các bước lưu chỉnh sửa ở đây
+		// Sau khi lưu xong, đóng modal
+		closeEditModal();
+		closeAddModal();
+	}
+	// Hàm đóng modal
+	function closeEditModal() {
+		$('#editModal').modal('hide');
+	}
+	function closeAddModal() {
+		$('#addModal').modal('hide');
+	}
+	// Khi click vào nút "Edit" trong dropdown, gọi hàm showEditModal()
+	$('.edit').on('click', function () {
+		showEditModal();
+	});
+	// Khi click vào nút "Add" trong dropdown, gọi hàm showEditModal()
+	$('.addNewRoom').on('click', function () {
+		showAddModal();
+	});
+</script>

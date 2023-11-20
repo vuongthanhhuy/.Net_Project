@@ -11,7 +11,6 @@
     <Content Remove="Views\blog-single.cshtml" />
     <Content Remove="Views\blog.cshtml" />
     <Content Remove="Views\contact.cshtml" />
-    <Content Remove="Views\index-2.cshtml" />
     <Content Remove="Views\index.cshtml" />
     <Content Remove="Views\rooms.cshtml" />
     <Content Remove="Views\services.cshtml" />
@@ -22,7 +21,6 @@
     <None Include="Views\blog-single.cshtml" />
     <None Include="Views\blog.cshtml" />
     <None Include="Views\contact.cshtml" />
-    <None Include="Views\index-2.cshtml" />
     <None Include="Views\services.cshtml" />
     <None Include="wwwroot\fonts\flaticon\font\Flaticon.eot" />
     <None Include="wwwroot\fonts\flaticon\font\Flaticon.svg" />
